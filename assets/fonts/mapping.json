@@ -1,0 +1,13 @@
+{
+  "sans": [
+    "Microsoft YaHei",
+    "Noto Sans CJK SC",
+    "Arial"
+  ],
+  "serif": [
+    "SimSun",
+    "Noto Serif CJK SC",
+    "Georgia"
+  ],
+  "note": "Preferences only. Renderer must have the selected font; fonts are not bundled or silently installed."
+}

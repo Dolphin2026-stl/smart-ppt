@@ -1,0 +1,54 @@
+{
+  "assets": {
+    "backgrounds": [],
+    "logos": [
+      "${SMART_PPT_ROOT}\\examples\\demo-deck\\creator-assets\\logos\\smart.png"
+    ],
+    "icons": [],
+    "palettes": [
+      "${SMART_PPT_ROOT}\\examples\\demo-deck\\creator-assets\\palettes\\purple.png"
+    ],
+    "fonts": [],
+    "unclassified": []
+  },
+  "palette": [
+    "422353",
+    "36293E",
+    "855F8A",
+    "BCADBF",
+    "FCF9F6"
+  ],
+  "layouts": {
+    "cover": [
+      0,
+      0
+    ],
+    "agenda": [
+      0,
+      1
+    ],
+    "content": [
+      0,
+      2
+    ],
+    "two-column": [
+      0,
+      3
+    ],
+    "three-column": [
+      0,
+      4
+    ],
+    "chart": [
+      0,
+      5
+    ],
+    "ending": [
+      0,
+      6
+    ]
+  },
+  "font_preference": "Microsoft YaHei",
+  "font_files_embedded": false,
+  "icons_used": false
+}

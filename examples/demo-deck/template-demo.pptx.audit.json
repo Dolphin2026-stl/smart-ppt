@@ -1,0 +1,69 @@
+{
+  "mode": "layouts",
+  "geometry_changes": [],
+  "slides": [
+    {
+      "master_index": 0,
+      "layout": 0,
+      "reason": "explicit selection",
+      "baseline_placeholders": {
+        "0": [
+          914400,
+          1828800,
+          6949440,
+          1371600
+        ],
+        "1": [
+          914400,
+          3657600,
+          6766560,
+          1280160
+        ]
+      }
+    },
+    {
+      "master_index": 0,
+      "layout": 3,
+      "reason": "explicit selection",
+      "baseline_placeholders": {
+        "0": [
+          914400,
+          731520,
+          9692640,
+          822960
+        ],
+        "1": [
+          914400,
+          2011680,
+          4572000,
+          3749039
+        ],
+        "2": [
+          6126480,
+          2011680,
+          4572000,
+          3749039
+        ]
+      }
+    },
+    {
+      "master_index": 0,
+      "layout": 6,
+      "reason": "explicit selection",
+      "baseline_placeholders": {
+        "0": [
+          914400,
+          1828800,
+          6949440,
+          1371600
+        ],
+        "1": [
+          914400,
+          3657600,
+          6766560,
+          1280160
+        ]
+      }
+    }
+  ]
+}

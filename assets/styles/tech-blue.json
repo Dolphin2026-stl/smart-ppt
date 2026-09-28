@@ -1,0 +1,206 @@
+{
+  "name": "tech-blue",
+  "colors": {
+    "primary": "163B60",
+    "secondary": "153655",
+    "accent": "44DDDA",
+    "background": "08192F",
+    "text": "EEF6FF"
+  },
+  "fonts": {
+    "title": "Aptos Display",
+    "body": "Aptos",
+    "sizes": {
+      "cover": 44,
+      "title": 32,
+      "body": 24,
+      "caption": 16
+    }
+  },
+  "layouts": {
+    "cover": [
+      {
+        "role": "title",
+        "box": [
+          1,
+          2,
+          7.6,
+          1.5
+        ],
+        "size": 44
+      },
+      {
+        "role": "body",
+        "box": [
+          1,
+          4,
+          7.4,
+          1.4
+        ],
+        "size": 22
+      }
+    ],
+    "agenda": [
+      {
+        "role": "title",
+        "box": [
+          1,
+          0.8,
+          10.6,
+          0.9
+        ]
+      },
+      {
+        "role": "body",
+        "box": [
+          1,
+          2.2,
+          10.6,
+          4.1
+        ]
+      }
+    ],
+    "content": [
+      {
+        "role": "title",
+        "box": [
+          1,
+          0.8,
+          10.6,
+          0.9
+        ]
+      },
+      {
+        "role": "body",
+        "box": [
+          1,
+          2.2,
+          10.6,
+          4.1
+        ]
+      }
+    ],
+    "two-column": [
+      {
+        "role": "title",
+        "box": [
+          1,
+          0.8,
+          10.6,
+          0.9
+        ]
+      },
+      {
+        "role": "body",
+        "box": [
+          1,
+          2.2,
+          5,
+          4.1
+        ]
+      },
+      {
+        "role": "body",
+        "box": [
+          6.7,
+          2.2,
+          5,
+          4.1
+        ]
+      }
+    ],
+    "three-column": [
+      {
+        "role": "title",
+        "box": [
+          1,
+          0.8,
+          10.6,
+          0.9
+        ]
+      },
+      {
+        "role": "body",
+        "box": [
+          1,
+          2.2,
+          3.25,
+          4.1
+        ]
+      },
+      {
+        "role": "body",
+        "box": [
+          4.85,
+          2.2,
+          3.25,
+          4.1
+        ]
+      },
+      {
+        "role": "body",
+        "box": [
+          8.7,
+          2.2,
+          3.25,
+          4.1
+        ]
+      }
+    ],
+    "chart": [
+      {
+        "role": "title",
+        "box": [
+          1,
+          0.8,
+          10.6,
+          0.9
+        ]
+      },
+      {
+        "role": "body",
+        "box": [
+          1,
+          2.2,
+          3.4,
+          4.1
+        ]
+      },
+      {
+        "role": "picture",
+        "box": [
+          5,
+          2.2,
+          6.6,
+          4.1
+        ]
+      }
+    ],
+    "ending": [
+      {
+        "role": "title",
+        "box": [
+          1,
+          2,
+          7.6,
+          1.5
+        ],
+        "size": 44
+      },
+      {
+        "role": "body",
+        "box": [
+          1,
+          4,
+          7.4,
+          1.4
+        ],
+        "size": 22
+      }
+    ]
+  },
+  "decorations": {
+    "kind": "grid",
+    "icon_style": "outline"
+  }
+}

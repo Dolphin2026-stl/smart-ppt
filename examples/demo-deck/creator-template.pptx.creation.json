@@ -1,0 +1,643 @@
+{
+  "geometry_changes": [
+    {
+      "layout": 0,
+      "shape": "Rectangle 1",
+      "geometry_emu": [
+        502920,
+        502920,
+        73152,
+        5806440
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 0,
+      "shape": "Rectangle 2",
+      "geometry_emu": [
+        576072,
+        6309360,
+        11064240,
+        109728
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 0,
+      "shape": "Picture 3",
+      "geometry_emu": [
+        10607040,
+        310896,
+        960120,
+        384048
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 0,
+      "shape": "title-0",
+      "geometry_emu": [
+        914400,
+        1828800,
+        6949440,
+        1371600
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 0,
+      "shape": "body-1",
+      "geometry_emu": [
+        914400,
+        3657600,
+        6766560,
+        1280160
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 1,
+      "shape": "Rectangle 1",
+      "geometry_emu": [
+        502920,
+        502920,
+        73152,
+        5806440
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 1,
+      "shape": "Rectangle 2",
+      "geometry_emu": [
+        576072,
+        6309360,
+        11064240,
+        109728
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 1,
+      "shape": "Picture 3",
+      "geometry_emu": [
+        10607040,
+        310896,
+        960120,
+        384048
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 1,
+      "shape": "title-0",
+      "geometry_emu": [
+        914400,
+        731520,
+        9692640,
+        822960
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 1,
+      "shape": "body-1",
+      "geometry_emu": [
+        914400,
+        2011680,
+        9692640,
+        3749039
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 2,
+      "shape": "Rectangle 1",
+      "geometry_emu": [
+        502920,
+        502920,
+        73152,
+        5806440
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 2,
+      "shape": "Rectangle 2",
+      "geometry_emu": [
+        576072,
+        6309360,
+        11064240,
+        109728
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 2,
+      "shape": "Picture 3",
+      "geometry_emu": [
+        10607040,
+        310896,
+        960120,
+        384048
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 2,
+      "shape": "title-0",
+      "geometry_emu": [
+        914400,
+        731520,
+        9692640,
+        822960
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 2,
+      "shape": "body-1",
+      "geometry_emu": [
+        914400,
+        2011680,
+        9692640,
+        3749039
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 3,
+      "shape": "Rectangle 1",
+      "geometry_emu": [
+        502920,
+        502920,
+        73152,
+        5806440
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 3,
+      "shape": "Rectangle 2",
+      "geometry_emu": [
+        576072,
+        6309360,
+        11064240,
+        109728
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 3,
+      "shape": "Picture 3",
+      "geometry_emu": [
+        10607040,
+        310896,
+        960120,
+        384048
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 3,
+      "shape": "title-0",
+      "geometry_emu": [
+        914400,
+        731520,
+        9692640,
+        822960
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 3,
+      "shape": "body-1",
+      "geometry_emu": [
+        914400,
+        2011680,
+        4572000,
+        3749039
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 3,
+      "shape": "body-2",
+      "geometry_emu": [
+        6126480,
+        2011680,
+        4572000,
+        3749039
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 4,
+      "shape": "Rectangle 1",
+      "geometry_emu": [
+        502920,
+        502920,
+        73152,
+        5806440
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 4,
+      "shape": "Rectangle 2",
+      "geometry_emu": [
+        576072,
+        6309360,
+        11064240,
+        109728
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 4,
+      "shape": "Picture 3",
+      "geometry_emu": [
+        10607040,
+        310896,
+        960120,
+        384048
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 4,
+      "shape": "title-0",
+      "geometry_emu": [
+        914400,
+        731520,
+        9692640,
+        822960
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 4,
+      "shape": "body-1",
+      "geometry_emu": [
+        914400,
+        2011680,
+        2971800,
+        3749039
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 4,
+      "shape": "body-2",
+      "geometry_emu": [
+        4434840,
+        2011680,
+        2971800,
+        3749039
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 4,
+      "shape": "body-3",
+      "geometry_emu": [
+        7955279,
+        2011680,
+        2971800,
+        3749039
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 5,
+      "shape": "Rectangle 1",
+      "geometry_emu": [
+        502920,
+        502920,
+        73152,
+        5806440
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 5,
+      "shape": "Rectangle 2",
+      "geometry_emu": [
+        576072,
+        6309360,
+        11064240,
+        109728
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 5,
+      "shape": "Picture 3",
+      "geometry_emu": [
+        10607040,
+        310896,
+        960120,
+        384048
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 5,
+      "shape": "title-0",
+      "geometry_emu": [
+        914400,
+        731520,
+        9692640,
+        822960
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 5,
+      "shape": "body-1",
+      "geometry_emu": [
+        914400,
+        2011680,
+        3108960,
+        3749039
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 5,
+      "shape": "picture-2",
+      "geometry_emu": [
+        4572000,
+        2011680,
+        6035040,
+        3749039
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 6,
+      "shape": "Rectangle 1",
+      "geometry_emu": [
+        502920,
+        502920,
+        73152,
+        5806440
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 6,
+      "shape": "Rectangle 2",
+      "geometry_emu": [
+        576072,
+        6309360,
+        11064240,
+        109728
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 6,
+      "shape": "Picture 3",
+      "geometry_emu": [
+        10607040,
+        310896,
+        960120,
+        384048
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 6,
+      "shape": "title-0",
+      "geometry_emu": [
+        914400,
+        1828800,
+        6949440,
+        1371600
+      ],
+      "reason": "initial authoring; no source template modified"
+    },
+    {
+      "layout": 6,
+      "shape": "body-1",
+      "geometry_emu": [
+        914400,
+        3657600,
+        6766560,
+        1280160
+      ],
+      "reason": "initial authoring; no source template modified"
+    }
+  ],
+  "style": {
+    "name": "academic",
+    "colors": {
+      "primary": "36293E",
+      "secondary": "BCADBF",
+      "accent": "422353",
+      "background": "FCFAF6",
+      "text": "302538"
+    },
+    "fonts": {
+      "title": "Microsoft YaHei",
+      "body": "Microsoft YaHei",
+      "sizes": {
+        "cover": 44,
+        "title": 32,
+        "body": 24,
+        "caption": 16
+      }
+    },
+    "layouts": {
+      "cover": [
+        {
+          "role": "title",
+          "box": [
+            1,
+            2,
+            7.6,
+            1.5
+          ],
+          "size": 44
+        },
+        {
+          "role": "body",
+          "box": [
+            1,
+            4,
+            7.4,
+            1.4
+          ],
+          "size": 22
+        }
+      ],
+      "agenda": [
+        {
+          "role": "title",
+          "box": [
+            1,
+            0.8,
+            10.6,
+            0.9
+          ]
+        },
+        {
+          "role": "body",
+          "box": [
+            1,
+            2.2,
+            10.6,
+            4.1
+          ]
+        }
+      ],
+      "content": [
+        {
+          "role": "title",
+          "box": [
+            1,
+            0.8,
+            10.6,
+            0.9
+          ]
+        },
+        {
+          "role": "body",
+          "box": [
+            1,
+            2.2,
+            10.6,
+            4.1
+          ]
+        }
+      ],
+      "two-column": [
+        {
+          "role": "title",
+          "box": [
+            1,
+            0.8,
+            10.6,
+            0.9
+          ]
+        },
+        {
+          "role": "body",
+          "box": [
+            1,
+            2.2,
+            5,
+            4.1
+          ]
+        },
+        {
+          "role": "body",
+          "box": [
+            6.7,
+            2.2,
+            5,
+            4.1
+          ]
+        }
+      ],
+      "three-column": [
+        {
+          "role": "title",
+          "box": [
+            1,
+            0.8,
+            10.6,
+            0.9
+          ]
+        },
+        {
+          "role": "body",
+          "box": [
+            1,
+            2.2,
+            3.25,
+            4.1
+          ]
+        },
+        {
+          "role": "body",
+          "box": [
+            4.85,
+            2.2,
+            3.25,
+            4.1
+          ]
+        },
+        {
+          "role": "body",
+          "box": [
+            8.7,
+            2.2,
+            3.25,
+            4.1
+          ]
+        }
+      ],
+      "chart": [
+        {
+          "role": "title",
+          "box": [
+            1,
+            0.8,
+            10.6,
+            0.9
+          ]
+        },
+        {
+          "role": "body",
+          "box": [
+            1,
+            2.2,
+            3.4,
+            4.1
+          ]
+        },
+        {
+          "role": "picture",
+          "box": [
+            5,
+            2.2,
+            6.6,
+            4.1
+          ]
+        }
+      ],
+      "ending": [
+        {
+          "role": "title",
+          "box": [
+            1,
+            2,
+            7.6,
+            1.5
+          ],
+          "size": 44
+        },
+        {
+          "role": "body",
+          "box": [
+            1,
+            4,
+            7.4,
+            1.4
+          ],
+          "size": 22
+        }
+      ]
+    },
+    "decorations": {
+      "kind": "band",
+      "icon_style": "outline"
+    }
+  },
+  "brand": {
+    "background": null,
+    "logo": "${SMART_PPT_ROOT}\\examples\\demo-deck\\creator-assets\\logos\\smart.png"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "file": "creator-demo.pptx",
+  "slide_count": 3,
+  "passed": true,
+  "render_review_required": true,
+  "limitations": [
+    "Text overflow is a heuristic; actual font metrics and rendering may differ.",
+    "Without a baseline audit, inherited-layout changes cannot be attributed.",
+    "Cropped pictures are compared after cropping; crop is not distortion."
+  ],
+  "issues": []
+}

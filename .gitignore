@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+local/
+templates/**
+!templates/.gitkeep
+!templates/README.md
+assets/backgrounds/**
+assets/logos/**
+assets/icons/**
+assets/palettes/**

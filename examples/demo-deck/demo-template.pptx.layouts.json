@@ -1,0 +1,527 @@
+{
+  "template": "demo-template.pptx",
+  "slide_size": {
+    "width_inches": 13.333332239720034,
+    "height_inches": 7.5
+  },
+  "layouts": [
+    {
+      "master_index": 0,
+      "index": 0,
+      "name": "cover",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "title",
+          "name": "title-0",
+          "geometry_emu": [
+            914400,
+            1828800,
+            6949440,
+            1371600
+          ]
+        },
+        {
+          "idx": 1,
+          "type": "body",
+          "name": "body-1",
+          "geometry_emu": [
+            914400,
+            3657600,
+            6766560,
+            1280160
+          ]
+        }
+      ]
+    },
+    {
+      "master_index": 0,
+      "index": 1,
+      "name": "agenda",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "title",
+          "name": "title-0",
+          "geometry_emu": [
+            914400,
+            731520,
+            9692640,
+            822960
+          ]
+        },
+        {
+          "idx": 1,
+          "type": "body",
+          "name": "body-1",
+          "geometry_emu": [
+            914400,
+            2011680,
+            9692640,
+            3749039
+          ]
+        }
+      ]
+    },
+    {
+      "master_index": 0,
+      "index": 2,
+      "name": "content",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "title",
+          "name": "title-0",
+          "geometry_emu": [
+            914400,
+            731520,
+            9692640,
+            822960
+          ]
+        },
+        {
+          "idx": 1,
+          "type": "body",
+          "name": "body-1",
+          "geometry_emu": [
+            914400,
+            2011680,
+            9692640,
+            3749039
+          ]
+        }
+      ]
+    },
+    {
+      "master_index": 0,
+      "index": 3,
+      "name": "two-column",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "title",
+          "name": "title-0",
+          "geometry_emu": [
+            914400,
+            731520,
+            9692640,
+            822960
+          ]
+        },
+        {
+          "idx": 1,
+          "type": "body",
+          "name": "body-1",
+          "geometry_emu": [
+            914400,
+            2011680,
+            4572000,
+            3749039
+          ]
+        },
+        {
+          "idx": 2,
+          "type": "body",
+          "name": "body-2",
+          "geometry_emu": [
+            6126480,
+            2011680,
+            4572000,
+            3749039
+          ]
+        }
+      ]
+    },
+    {
+      "master_index": 0,
+      "index": 4,
+      "name": "three-column",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "title",
+          "name": "title-0",
+          "geometry_emu": [
+            914400,
+            731520,
+            9692640,
+            822960
+          ]
+        },
+        {
+          "idx": 1,
+          "type": "body",
+          "name": "body-1",
+          "geometry_emu": [
+            914400,
+            2011680,
+            2971800,
+            3749039
+          ]
+        },
+        {
+          "idx": 2,
+          "type": "body",
+          "name": "body-2",
+          "geometry_emu": [
+            4434840,
+            2011680,
+            2971800,
+            3749039
+          ]
+        },
+        {
+          "idx": 3,
+          "type": "body",
+          "name": "body-3",
+          "geometry_emu": [
+            7955279,
+            2011680,
+            2971800,
+            3749039
+          ]
+        }
+      ]
+    },
+    {
+      "master_index": 0,
+      "index": 5,
+      "name": "chart",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "title",
+          "name": "title-0",
+          "geometry_emu": [
+            914400,
+            731520,
+            9692640,
+            822960
+          ]
+        },
+        {
+          "idx": 1,
+          "type": "body",
+          "name": "body-1",
+          "geometry_emu": [
+            914400,
+            2011680,
+            3108960,
+            3749039
+          ]
+        },
+        {
+          "idx": 2,
+          "type": "picture",
+          "name": "picture-2",
+          "geometry_emu": [
+            4572000,
+            2011680,
+            6035040,
+            3749039
+          ]
+        }
+      ]
+    },
+    {
+      "master_index": 0,
+      "index": 6,
+      "name": "ending",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "title",
+          "name": "title-0",
+          "geometry_emu": [
+            914400,
+            1828800,
+            6949440,
+            1371600
+          ]
+        },
+        {
+          "idx": 1,
+          "type": "body",
+          "name": "body-1",
+          "geometry_emu": [
+            914400,
+            3657600,
+            6766560,
+            1280160
+          ]
+        }
+      ]
+    },
+    {
+      "master_index": 0,
+      "index": 7,
+      "name": "Content with Caption",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "title",
+          "name": "Title 1",
+          "geometry_emu": [
+            457200,
+            273050,
+            3008313,
+            1162050
+          ]
+        },
+        {
+          "idx": 1,
+          "type": "object",
+          "name": "Content Placeholder 2",
+          "geometry_emu": [
+            3575050,
+            273050,
+            5111750,
+            5853113
+          ]
+        },
+        {
+          "idx": 2,
+          "type": "body",
+          "name": "Text Placeholder 3",
+          "geometry_emu": [
+            457200,
+            1435100,
+            3008313,
+            4691063
+          ]
+        },
+        {
+          "idx": 10,
+          "type": "date",
+          "name": "Date Placeholder 4",
+          "geometry_emu": [
+            457200,
+            6356350,
+            2133600,
+            365125
+          ]
+        },
+        {
+          "idx": 11,
+          "type": "footer",
+          "name": "Footer Placeholder 5",
+          "geometry_emu": [
+            3124200,
+            6356350,
+            2895600,
+            365125
+          ]
+        },
+        {
+          "idx": 12,
+          "type": "slide_number",
+          "name": "Slide Number Placeholder 6",
+          "geometry_emu": [
+            6553200,
+            6356350,
+            2133600,
+            365125
+          ]
+        }
+      ]
+    },
+    {
+      "master_index": 0,
+      "index": 8,
+      "name": "Picture with Caption",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "title",
+          "name": "Title 1",
+          "geometry_emu": [
+            1792288,
+            4800600,
+            5486400,
+            566738
+          ]
+        },
+        {
+          "idx": 1,
+          "type": "picture",
+          "name": "Picture Placeholder 2",
+          "geometry_emu": [
+            1792288,
+            612775,
+            5486400,
+            4114800
+          ]
+        },
+        {
+          "idx": 2,
+          "type": "body",
+          "name": "Text Placeholder 3",
+          "geometry_emu": [
+            1792288,
+            5367338,
+            5486400,
+            804862
+          ]
+        },
+        {
+          "idx": 10,
+          "type": "date",
+          "name": "Date Placeholder 4",
+          "geometry_emu": [
+            457200,
+            6356350,
+            2133600,
+            365125
+          ]
+        },
+        {
+          "idx": 11,
+          "type": "footer",
+          "name": "Footer Placeholder 5",
+          "geometry_emu": [
+            3124200,
+            6356350,
+            2895600,
+            365125
+          ]
+        },
+        {
+          "idx": 12,
+          "type": "slide_number",
+          "name": "Slide Number Placeholder 6",
+          "geometry_emu": [
+            6553200,
+            6356350,
+            2133600,
+            365125
+          ]
+        }
+      ]
+    },
+    {
+      "master_index": 0,
+      "index": 9,
+      "name": "Title and Vertical Text",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "title",
+          "name": "Title 1",
+          "geometry_emu": [
+            457200,
+            274638,
+            8229600,
+            1143000
+          ]
+        },
+        {
+          "idx": 1,
+          "type": "body",
+          "name": "Vertical Text Placeholder 2",
+          "geometry_emu": [
+            457200,
+            1600200,
+            8229600,
+            4525963
+          ]
+        },
+        {
+          "idx": 10,
+          "type": "date",
+          "name": "Date Placeholder 3",
+          "geometry_emu": [
+            457200,
+            6356350,
+            2133600,
+            365125
+          ]
+        },
+        {
+          "idx": 11,
+          "type": "footer",
+          "name": "Footer Placeholder 4",
+          "geometry_emu": [
+            3124200,
+            6356350,
+            2895600,
+            365125
+          ]
+        },
+        {
+          "idx": 12,
+          "type": "slide_number",
+          "name": "Slide Number Placeholder 5",
+          "geometry_emu": [
+            6553200,
+            6356350,
+            2133600,
+            365125
+          ]
+        }
+      ]
+    },
+    {
+      "master_index": 0,
+      "index": 10,
+      "name": "Vertical Title and Text",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "title",
+          "name": "Vertical Title 1",
+          "geometry_emu": [
+            6629400,
+            274638,
+            2057400,
+            5851525
+          ]
+        },
+        {
+          "idx": 1,
+          "type": "body",
+          "name": "Vertical Text Placeholder 2",
+          "geometry_emu": [
+            457200,
+            274638,
+            6019800,
+            5851525
+          ]
+        },
+        {
+          "idx": 10,
+          "type": "date",
+          "name": "Date Placeholder 3",
+          "geometry_emu": [
+            457200,
+            6356350,
+            2133600,
+            365125
+          ]
+        },
+        {
+          "idx": 11,
+          "type": "footer",
+          "name": "Footer Placeholder 4",
+          "geometry_emu": [
+            3124200,
+            6356350,
+            2895600,
+            365125
+          ]
+        },
+        {
+          "idx": 12,
+          "type": "slide_number",
+          "name": "Slide Number Placeholder 5",
+          "geometry_emu": [
+            6553200,
+            6356350,
+            2133600,
+            365125
+          ]
+        }
+      ]
+    }
+  ],
+  "sample_pages": []
+}
