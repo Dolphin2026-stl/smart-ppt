@@ -1,8 +1,10 @@
 # smart-ppt
 
+**[简体中文 · 中文使用指南](README.zh-CN.md)** | English
+
 A complete-template-first PPT skill for Agent Skills hosts.
 
-[中文说明](README.zh-CN.md) · [SKILL.md](SKILL.md)
+[SKILL.md](SKILL.md)
 
 ## Bring your own templates
 
