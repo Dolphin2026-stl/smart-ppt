@@ -1,5 +1,5 @@
 """Edit a complete PPTX package, preserving untouched parts byte-for-byte."""
-import hashlib,posixpath,shutil,zipfile
+import hashlib,posixpath,shutil,zipfile,io
 from pathlib import Path
 from copy import deepcopy
 from lxml import etree as E
@@ -30,11 +30,14 @@ def generate_full(template,plan,output):
         i=index(item['page'])
         if i in edits:raise ValueError('Combine edits for the same page')
         edits[i]=item.get('texts',{})
+    image_edits={}
+    for item in plan.get('edits',[]):
+        if item.get('images'):image_edits[item['page']]=item['images']
     chosen=[x['source_page'] if isinstance(x,dict) else x for x in sequence]
-    if set(edits)-set(chosen):raise ValueError('Cannot edit a deleted page')
+    if (set(edits)|set(image_edits))-set(chosen):raise ValueError('Cannot edit a deleted page')
     baseline=[{str(s.shape_id):geometry(s) for s in walk(slide.shapes)} for slide in original]
     audit={'mode':'full-deck','source_sha256':hashlib.sha256(Path(template).read_bytes()).hexdigest(),'source_slide_count':n,'geometry_changes':[],'deleted_pages':sorted(set(range(n))-set(chosen)),'slides':[]}
-    if not edits and 'sequence' not in plan and not deleted:
+    if not edits and not image_edits and 'sequence' not in plan and not deleted:
         Path(output).parent.mkdir(parents=True,exist_ok=True);shutil.copy2(template,output)
         audit['slides']=[{'source_page':i,'baseline':baseline[i],'filled_shapes':[]} for i in range(n)]
         audit['unchanged_copy']=True;write_json(str(output)+'.audit.json',audit);return audit
@@ -65,10 +68,11 @@ def generate_full(template,plan,output):
             data[relpath(dest)]=dump(rels)
         return dest
     for child in list(ids):ids.remove(child)
-    seen=set();next_id=max(int(x.get('id')) for x in original_ids)+1;used_rids=set(rel_by)
-    for entry in sequence:
+    seen=set();next_id=max(int(x.get('id')) for x in original_ids)+1;used_rids=set(rel_by);images_changed=False
+    for output_index,entry in enumerate(sequence):
         i=entry['source_page'] if isinstance(entry,dict) else entry
         texts=dict(edits.get(i,{}));texts.update(entry.get('texts',{}) if isinstance(entry,dict) else {})
+        pictures=dict(image_edits.get(i,{}));pictures.update(entry.get('images',{}) if isinstance(entry,dict) else {})
         source=original[i];part=parts[i]
         if i in seen:
             part=clone(part,{});sid=deepcopy(original_ids[i]);sid.set('id',str(next_id));next_id+=1
@@ -77,7 +81,7 @@ def generate_full(template,plan,output):
             used_rids.add(rid);rel=E.SubElement(pr,'{'+R+'}Relationship',Id=rid,Type=O+'/slide',Target=posixpath.relpath(part,'ppt'));sid.set('{'+O+'}id',rid)
         else:sid=deepcopy(original_ids[i])
         seen.add(i);ids.append(sid)
-        if texts:
+        if texts or pictures:
             # Fresh source proxy prevents one duplicate's text edit leaking into another.
             from pptx.slide import Slide
             working=Slide(deepcopy(source._element),source.part)
@@ -85,9 +89,35 @@ def generate_full(template,plan,output):
             for key,value in texts.items():
                 if key not in shape_map or not shape_map[key].has_text_frame:raise ValueError(f'No editable text shape {key} on page {i}')
                 set_text(shape_map[key],value)
+            slide_xml=working._element
+            slide_rels_path=relpath(part)
+            rels_blob=data.get(slide_rels_path,source_data.get(relpath(parts[i])))
+            rels=xml(rels_blob) if rels_blob else E.Element('{'+R+'}Relationships')
+            for shape_id,image_path in pictures.items():
+                if shape_id not in shape_map or not shape_map[shape_id].shape_type==13:
+                    raise ValueError(f'Image target {shape_id} on page {i} must be an existing picture shape')
+                image_path=Path(image_path)
+                if not image_path.is_file():raise FileNotFoundError(image_path)
+                from PIL import Image
+                with Image.open(image_path) as image:
+                    image_format=image.format
+                    if image_format not in ('PNG','JPEG'):raise ValueError('Replacement images must be PNG or JPEG')
+                    buffer=io.BytesIO();image.save(buffer,format=image_format)
+                ext='png' if image_format=='PNG' else 'jpeg'
+                content_type='image/png' if ext=='png' else 'image/jpeg'
+                defaults={x.get('Extension'):x for x in types if x.tag.endswith('Default')}
+                if ext not in defaults:E.SubElement(types,'{'+C+'}Default',Extension=ext,ContentType=content_type)
+                media=f'ppt/media/smartppt_output{output_index+1}_shape{shape_id}.{ext}';data[media]=buffer.getvalue()
+                rid=f'rIdSmartPptImage{i+1}_{shape_id}';existing={x.get('Id') for x in rels}
+                while rid in existing:rid+='x'
+                E.SubElement(rels,'{'+R+'}Relationship',Id=rid,Type=O+'/image',Target=posixpath.relpath(media,posixpath.dirname(part)))
+                blip=next((node for node in shape_map[shape_id]._element.iter() if node.tag=='{http://schemas.openxmlformats.org/drawingml/2006/main}blip'),None)
+                if blip is None:raise ValueError(f'Picture shape {shape_id} has no image reference')
+                blip.set('{'+O+'}embed',rid)
+            if pictures:data[slide_rels_path]=dump(rels);images_changed=True
             if baseline[i]!={str(s.shape_id):geometry(s) for s in walk(working.shapes)}:raise RuntimeError('Geometry changed')
-            data[part]=dump(working._element)
-        audit['slides'].append({'source_page':i,'baseline':baseline[i],'filled_shapes':list(texts),'duplicated':chosen.count(i)>1})
+            data[part]=dump(slide_xml)
+        audit['slides'].append({'source_page':i,'baseline':baseline[i],'filled_shapes':list(texts),'replaced_images':list(pictures),'duplicated':chosen.count(i)>1})
     active={x.get('{'+O+'}id') for x in ids}
     for rel in list(pr):
         if rel.get('Type')==O+'/slide' and rel.get('Id') not in active:pr.remove(rel)
@@ -118,7 +148,7 @@ def generate_full(template,plan,output):
         data={k:v for k,v in data.items() if k in reachable or k=='[Content_Types].xml'}
         for item in list(types):
             if item.tag.endswith('Override') and item.get('PartName').lstrip('/') not in data:types.remove(item)
-    if counter[0] or removed:data['[Content_Types].xml']=dump(types)
+    if counter[0] or removed or images_changed:data['[Content_Types].xml']=dump(types)
     Path(output).parent.mkdir(parents=True,exist_ok=True)
     with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED) as z:
         for name,blob in data.items():z.writestr(name,blob)

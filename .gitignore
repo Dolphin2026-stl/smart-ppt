@@ -2,6 +2,7 @@ __pycache__/
 *.pyc
 .venv/
 local/
+template_roots.local.json
 templates/**
 !templates/.gitkeep
 !templates/README.md

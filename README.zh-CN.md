@@ -127,3 +127,8 @@ python -m unittest discover -s tests -v
 ## 发布包
 
 `python scripts/package_release.py` 生成不含用户模板的ZIP和SHA-256。仓库与发布包只包含通用代码、自制示例与文档。用户提供模板的使用授权由用户自行管理。
+## 成品交付标准
+
+正文通常不低于 14 pt；浅色底用黑色正文，深色底用白色正文。Agent 会检查模板原有图片与新内容是否相关，并在原图片形状中替换不适合的图片。每张成品幻灯片都要有讲稿备注，每份 PPTX 旁都要有逐页记录事实与图片来源的 `信息源报告.md`。详细规则见 [SKILL.md](SKILL.md) 与 [视觉规范](references/visual-standards.md)。
+
+Windows 且已安装 Microsoft PowerPoint 时，生成后运行 `powershell -File scripts/finalize_powerpoint.ps1 -Pptx output.pptx -Plan plan.json -Audit output.pptx.audit.json`。计划 JSON 必须为每张最终幻灯片提供讲稿；缺失时脚本会停止，补齐后再交付。

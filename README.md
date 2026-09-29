@@ -73,3 +73,8 @@ Text overflow is estimated; render slides to confirm appearance. Chart/image dat
 ## Release
 
 Run `python scripts/package_release.py` to create a ZIP and SHA-256 excluding user templates. The public repository includes no private source history or institution-specific decks, logos or screenshots.
+## Delivery standard
+
+Generated decks use readable body text (generally 14 pt or larger), black text on light slides and white text on dark slides. Agents review template images against the new content and replace irrelevant images within their existing frames. Every final slide receives speaker notes, and each deck ships with a per-slide `信息源报告.md` covering factual and image sources. See [the skill instructions](SKILL.md) and [visual guidance](references/visual-standards.md).
+
+On Windows with Microsoft PowerPoint, run `powershell -File scripts/finalize_powerpoint.ps1 -Pptx output.pptx -Plan plan.json -Audit output.pptx.audit.json` after generation. The plan must include notes for every output slide. The finalizer writes the notes and source report; it stops if any notes are missing.
